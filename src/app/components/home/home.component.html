@@ -1,0 +1,63 @@
+<section class="card-layout">
+  <div class="card-intro">
+    <h1>Va Ranjith</h1>
+    <p>Hello there, I am a senior software engineer, working for L&T Technology Services and lives in Bengaluru. Recently won a hackathon competition!!</p>
+    <div class="card-triggers">
+      <button class="button primary">Download Cv</button>
+      <button (click)="openCard()" class="button secondary">Discover</button>
+    </div>
+  </div>
+  <div id="card" class="card">
+    <div class="cover">
+      <img class="cover-img" src="../../../assets/images/home/portrait.png" alt="vcard">
+      <div class="cover-media" data-image-url="images/home/cover5-big.jpg" style="background-image: url(../../../assets/images/home/portrait.png)"></div>
+      <div class="card-info">
+        <h2>Va Ranjith</h2>
+        <h3>Full Stack Developer</h3>
+        <div class="card-desc">
+          <p>Hello there, I am a senior software engineer, working for L&T Technology Services and lives in Bengaluru. Recently won a hackathon competition!!</p>
+        </div>
+      </div>
+      <nav class="card-nav">
+        <ul>
+          <li>
+            <a (click)="openSection('about-me')"><i class="pw-icon-user"></i>About Me</a>
+          </li>
+          <!-- <li>
+            <a (click)="openSection('resume')"><i class="pw-icon-vcard"></i>Resume</a>
+          </li>
+          <li>
+            <a (click)="openSection('portolio')"><i class="pw-icon-lightbulb"></i>Portfolio</a>
+          </li>
+          <li>
+            <a (click)="openSection('about-me')"><i class="pw-icon-book-open-1"></i>Blog</a>
+          </li>
+          <li>
+            <a (click)="openSection('contact')"><i class="pw-icon-at"></i>Contact</a>
+          </li> -->
+        </ul>
+      </nav>
+      <div class="cover-link"></div>
+    </div>
+    <div class="card-3d-right-side" style="background-image: url(../../../assets/images/home/portrait.png)"></div>
+    <div class="card-3d-bottom-side" style="background-image: url(../../../assets/images/home/portrait.png)"></div>
+    <div class="card-content is-loaded">
+      <ng-container #sectionContainer></ng-container>
+    </div>
+  </div>
+  <a class="close-card" (mouseenter)="onCloseFocus(true)" (mouseleave)="onCloseFocus(false)"
+     (click)="closeCard()" [ngClass]="{'is-visible':isCardOpen,'rotate-close':isCloseFocus}"
+  ></a>
+</section>
+<div class="card-footer">
+  <h1><a href="#card">go to top</a></h1>
+</div>
+
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="textwidget">
+      <p><a>Copyright &copy; 2019 by VaRanjith</a></p>
+    </div>
+  </div>
+</footer>

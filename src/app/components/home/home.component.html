@@ -8,12 +8,12 @@
     </div>
   </div>
   <div id="card" class="card">
-    <div class="cover">
+    <div class="cover" (click)="openCard()">
       <img class="cover-img" src="../../../assets/images/home/portrait.png" alt="vcard">
       <div class="cover-media" data-image-url="images/home/cover5-big.jpg" style="background-image: url(../../../assets/images/home/portrait.png)"></div>
       <div class="card-info">
         <h2>Va Ranjith</h2>
-        <h3>Full Stack Developer</h3>
+        <h3>Design is passion | Code is poetry </h3>
         <div class="card-desc">
           <p>Hello there, I am a senior software engineer, working for L&T Technology Services and lives in Bengaluru. Recently won a hackathon competition!!</p>
         </div>
@@ -21,7 +21,10 @@
       <nav class="card-nav">
         <ul>
           <li>
-            <a (click)="openSection('about-me')"><i class="pw-icon-user"></i>About Me</a>
+            <a routerLink='about-me' routerLinkActive='current_page_item' (click)="openSection()"><i class="pw-icon-user"></i>About Me</a>
+          </li>
+          <li>
+            <a routerLink='resume' routerLinkActive='current_page_item' (click)="openSection()"><i class="pw-icon-vcard"></i>Resume</a>
           </li>
           <!-- <li>
             <a (click)="openSection('resume')"><i class="pw-icon-vcard"></i>Resume</a>
@@ -42,6 +45,7 @@
     <div class="card-3d-right-side" style="background-image: url(../../../assets/images/home/portrait.png)"></div>
     <div class="card-3d-bottom-side" style="background-image: url(../../../assets/images/home/portrait.png)"></div>
     <div class="card-content is-loaded">
+      <router-outlet></router-outlet>
       <ng-container #sectionContainer></ng-container>
     </div>
   </div>

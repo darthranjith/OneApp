@@ -9,10 +9,10 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import {Store} from '@ngrx/store';
-import {State} from '../../reducers';
-import {CloseCard, OpenCard} from '../../actions/card-status.actions';
+import {State} from '../../store/reducers';
+import {CloseCard, OpenCard} from '../../store/actions/card-status.actions';
 import {AboutmeComponent} from '../aboutme/aboutme.component';
-import {CloseSection, OpenSection} from '../../actions/section-status.actions';
+import {CloseSection, OpenSection} from '../../store/actions/section-status.actions';
 import {ResumeComponent} from '../resume/resume.component';
 
 @Component({

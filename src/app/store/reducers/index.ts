@@ -5,7 +5,7 @@ import {
   createSelector,
   MetaReducer
 } from '@ngrx/store';
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment';
 import {cardReducer, ICardState} from './card-status.reducer';
 import {ISectionState, sectionReducer} from './section-status.reducer';
 

@@ -49,4 +49,12 @@ export class HomeComponent implements OnInit {
     this.store.dispatch(new OpenSection());
     this.sectionEntry.clear();
   }
+
+  goToTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 }

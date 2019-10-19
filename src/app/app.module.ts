@@ -11,13 +11,17 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { ProgressBarComponent } from './components/helper/progress-bar/progress-bar.component';
+import { TestimonialComponent } from './components/helper/testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutmeComponent,
-    ResumeComponent
+    ResumeComponent,
+    ProgressBarComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,7 @@ import { ResumeComponent } from './components/resume/resume.component';
     }),
     !environment.production ? StoreDevtoolsModule.instrument() : []
   ],
-  providers: [{provide: LocationStrategy, useClass:HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

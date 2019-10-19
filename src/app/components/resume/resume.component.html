@@ -11,233 +11,76 @@
             <i class="pw-icon-briefcase"></i>
           </p>
         </div>
-
         <div class="event">
           <h3>Sep 2018 - Current</h3>
           <h4>Senior Software Engineer</h4>
           <h5>L&T Technology Services</h5>
           <p>I work for one of the biggest healthcare client of LTTS as a full stack developer. I write codes in Angular / C# and sometimes SQL Queries too.</p>
         </div>
-
-
         <div class="event">
           <h3>Oct 2017 - Sep 2018</h3>
           <h4>Software Engineer</h4>
           <h5>Saggezza India Pvt. Ltd.</h5>
           <p>I worked as a Full stack developer at Saggezza for 1 year. I create usable web interfaces, front end coding stuff and almost anything. But i loved what i did. Took care of entire UI and SSIS/SSRS stuffs.</p>
         </div>
-
         <div class="event">
           <h3>Oct 2016 - Oct 2017</h3>
           <h4>Software Engineer</h4>
           <h5>Cogwave Software Technologies</h5>
           <p>I worked as a Full stack developer and handled all the front-end coding using Angular / ASP.NET MVC.</p>
         </div>
-
         <div class="event">
           <h3>Nov 2014 - Oct 2016</h3>
           <h4>Software Developer</h4>
           <h5>Sivasakthi Software Services Pvt. Ltd.</h5>
           <p>I worked as a Full stack developer at SSST for 2 years. I learned a lot in coding/standards/new techs. </p>
         </div>
-
         <div class="event">
           <h2>EDUCATION</h2>
           <p>
             <i class="pw-icon-education"></i>
-            <!--<img src="images/site/icon-03.png" alt="image"/>-->
           </p>
         </div>
-
         <div class="event">
-          <h3>2002</h3>
-          <h4>Atom Science</h4>
-          <h5>Stanford University</h5>
-          <p>I studied atomic stuff at Stanford University. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.</p>
+          <h3>2009 - 2012</h3>
+          <h4>MASTER OF COMPUTER APPLICATIONS</h4>
+          <h5>HINDUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGIES</h5>
+          <p>9.02 CGPA (Distinction)</p>
         </div>
-
-
         <div class="event">
-          <h3>2010</h3>
-          <h4>Software Engineering</h4>
-          <h5>Harvard University</h5>
-          <p>I got my Master Degree at Harvard University. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.</p>
+          <h3>2006 - 2009</h3>
+          <h4>BACHELOR OF COMPUTER APPLICATIONS</h4>
+          <h5>SMS COLLEGE OF ARTS AND SCIENCE</h5>
+          <p>77% (First Class)</p>
         </div>
-
         <div class="event">
-          <h3>2006</h3>
-          <h4>Computer Science</h4>
-          <h5>MIT</h5>
-          <p>I studied Computer Science at MIT. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.</p>
+          <h3>2005 - 2006</h3>
+          <h4>HSC</h4>
+          <h5>SN MATRICULATION HIGHER SECONDARY SCHOOL</h5>
+          <p>79.25% (First Class)</p>
         </div>
-
-
-
+        <div class="event">
+          <h3>2003 - 2004</h3>
+          <h4>SSLC</h4>
+          <h5>SN MATRICULATION HIGHER SECONDARY SCHOOL</h5>
+          <p>74.25% (First Class)</p>
+        </div>
         <p><a href="#" class="button  primary"><i class="pw-icon-doc-alt"></i>Download CV</a></p>
-
       </div>
-      <!-- col -->
-
-
-
-
-      <!-- col -->
       <div class="col-sm-6">
-
-
-        <!-- section-title -->
         <div class="section-title center">
           <h2>
-            <i>marketable skills</i>
+            <i>coding skills</i>
           </h2>
         </div>
-        <!-- section-title -->
-
-
-        <!-- .skill-unit -->
-        <div class="skill-unit">
-          <h4>PHOTOGRAPHY</h4>
-          <div class="bar" data-percent="80">
-            <div class="progress"></div>
-          </div>
-        </div>
-        <!-- .skill-unit -->
-
-        <!-- .skill-unit -->
-        <div class="skill-unit">
-          <h4>VIDEOGRAPHY</h4>
-          <div class="bar" data-percent="100">
-            <div class="progress"></div>
-          </div>
-        </div>
-        <!-- .skill-unit -->
-
-        <!-- .skill-unit -->
-        <div class="skill-unit">
-          <h4>WEB TECHNOLOGY</h4>
-          <div class="bar" data-percent="80">
-            <div class="progress"></div>
-          </div>
-        </div>
-        <!-- .skill-unit -->
-
-        <!-- .skill-unit -->
-        <div class="skill-unit">
-          <h4>STRATEGIC CONSULTING</h4>
-          <div class="bar" data-percent="70">
-            <div class="progress"></div>
-          </div>
-        </div>
-        <!-- .skill-unit -->
-
-
-
-
-
-        <!-- section-title -->
-        <div class="section-title center">
-          <h2>
-            <i>transferable skills</i>
-          </h2>
-        </div>
-        <!-- section-title -->
-
-        <!-- .skill-unit -->
-        <div class="skill-unit">
-          <h4>COMMUNICATIONS</h4>
-          <div class="bar" data-percent="90">
-            <div class="progress"></div>
-          </div>
-        </div>
-        <!-- .skill-unit -->
-
-        <!-- .skill-unit -->
-        <div class="skill-unit">
-          <h4>TEAMWORK</h4>
-          <div class="bar" data-percent="70">
-            <div class="progress"></div>
-          </div>
-        </div>
-        <!-- .skill-unit -->
-
-        <!-- .skill-unit -->
-        <div class="skill-unit">
-          <h4>LEADERSHIP</h4>
-          <div class="bar" data-percent="80">
-            <div class="progress"></div>
-          </div>
-        </div>
-        <!-- .skill-unit -->
-
-
-
-        <!-- section-title -->
+        <app-progress-bar *ngFor="let skill of skills" [skillset]="skill"></app-progress-bar>
         <div class="section-title center">
           <h2>
             <i>TESTIMONIALS</i>
           </h2>
         </div>
-        <!-- section-title -->
-
-
-        <!-- Testimonial -->
-        <div class="testo">
-          <img src="../../../assets/images/site/testo-01.jpg" alt="someone">
-          <h4>Chris Jones</h4>
-          <h5>CEO / Dream Inc.</h5>
-          <p>He is a great and hardworking guy. I am so proud of i have him as my asistant. He helped me so much. Also i am so proud of i have him as my asistant. He helped me so much.</p>
-
-        </div>
-        <!-- Testimonial -->
-
-        <!-- Testimonial -->
-        <div class="testo">
-          <img src="../../../assets/images/site/testo-02.jpg" alt="someone">
-          <h4>Melody Coen</h4>
-          <h5>Chemist / Freelancer</h5>
-          <p>He was a great co-worker and a friend. I would't be where i am without his support.</p>
-
-        </div>
-        <!-- Testimonial -->
-
-        <!-- Testimonial -->
-        <div class="testo">
-          <img src="../../../assets/images/site/testo-03.jpg" alt="someone">
-
-          <h4>Jason Wilson</h4>
-          <h5>Lab Geek / Houston Tower</h5>
-          <p>He is ok. I don't really know him. He looks nice.</p>
-
-        </div>
-        <!-- Testimonial -->
-
-
-        <!-- Testimonial -->
-        <div class="testo">
-          <img src="../../../assets/images/site/testo-04.jpg" alt="someone">
-          <h4>Chris Jones</h4>
-          <h5>CEO / Dream Inc.</h5>
-          <p>He is a great and hardworking guy. I am so proud of i have him as my asistant. He helped me so much. Also i am so proud of i have him as my asistant. He helped me so much.</p>
-
-        </div>
-        <!-- Testimonial -->
-
-
+        <app-testimonial *ngFor="let testimonial of testimonials" [testimonial]="testimonial"></app-testimonial>
       </div>
-      <!-- col -->
-
-
     </div>
-    <!-- row -->
-
-
-
-
-
-
   </div>
-  <!-- .entry-content -->
-
-
-
 </article>

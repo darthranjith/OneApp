@@ -3,7 +3,7 @@
     <h1>Va Ranjith</h1>
     <p>Hello there, I am a senior software engineer, working for L&T Technology Services and lives in Bengaluru. Recently won a hackathon competition!!</p>
     <div class="card-triggers">
-      <button class="button primary">Download Cv</button>
+      <button type="button" fileSaver [method]="'GET'" [fileName]="'Ranjith-Resume.pdf'" [url]="'assets/files/general/resume.pdf'" class="button primary">Download Cv</button>
       <button (click)="openCard()" class="button secondary">Discover</button>
     </div>
   </div>

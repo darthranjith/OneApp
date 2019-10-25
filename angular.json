@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -34,8 +34,8 @@
               "src/assets/css/align.css",
               "src/assets/css/layout.css",
               "src/assets/css/main.css",
-              "src/assets/css/demo4.css",
-              "src/assets/css/normalize.css"
+              "src/assets/css/normalize.css",
+              "src/assets/css/demo4.css"
             ],
             "scripts": []
           },

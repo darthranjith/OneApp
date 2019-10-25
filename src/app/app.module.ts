@@ -13,6 +13,8 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ProgressBarComponent } from './components/helper/progress-bar/progress-bar.component';
 import { TestimonialComponent } from './components/helper/testimonial/testimonial.component';
+import {HttpClientModule} from '@angular/common/http';
+import {FileSaverModule} from 'ngx-filesaver';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { TestimonialComponent } from './components/helper/testimonial/testimonia
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FileSaverModule,
     StoreModule.forRoot(reducers, {
       metaReducers,
       runtimeChecks: {

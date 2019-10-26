@@ -15,6 +15,8 @@ import { ProgressBarComponent } from './components/helper/progress-bar/progress-
 import { TestimonialComponent } from './components/helper/testimonial/testimonial.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FileSaverModule} from 'ngx-filesaver';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { SinglePortfolioTemplateComponent } from './components/portfolio/single-portfolio-template/single-portfolio-template.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import {FileSaverModule} from 'ngx-filesaver';
     AboutmeComponent,
     ResumeComponent,
     ProgressBarComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    PortfolioComponent,
+    SinglePortfolioTemplateComponent
   ],
   imports: [
     BrowserModule,

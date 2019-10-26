@@ -1,0 +1,24 @@
+<article class="page hentry">
+  <header class="entry-header">
+    <h1 class="entry-title">portfolio</h1>
+  </header>
+  <div class="entry-content">
+    <ul id="filters" class="filters">
+      <li class="current">
+        <a href="#" data-filter="*">all</a>
+      </li>
+      <li>
+        <a href="#" data-filter=".media">Media</a>
+      </li>
+      <li>
+        <a href="#" data-filter=".illustration">Illustration</a>
+      </li>
+      <li>
+        <a href="#" data-filter=".video">Video</a>
+      </li>
+    </ul>
+    <div class="portfolio-items media-grid masonry" data-layout="masonry" data-item-width="340">
+      <app-single-portfolio-template *ngFor="let portfolio of portfolios" [portfolio]="portfolio"></app-single-portfolio-template>
+    </div>
+  </div>
+</article>

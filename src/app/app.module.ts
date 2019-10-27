@@ -16,7 +16,9 @@ import { TestimonialComponent } from './components/helper/testimonial/testimonia
 import {HttpClientModule} from '@angular/common/http';
 import {FileSaverModule} from 'ngx-filesaver';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { SinglePortfolioTemplateComponent } from './components/portfolio/single-portfolio-template/single-portfolio-template.component';
+import { PortfolioTemplateComponent } from './components/portfolio/portfolio-template/portfolio-template.component';
+import { SinglePortfolioComponent } from './components/portfolio/single-portfolio/single-portfolio.component';
+import { PortfolioNavigationComponent } from './components/portfolio/single-portfolio/portfolio-navigation/portfolio-navigation.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { SinglePortfolioTemplateComponent } from './components/portfolio/single-
     ProgressBarComponent,
     TestimonialComponent,
     PortfolioComponent,
-    SinglePortfolioTemplateComponent
+    PortfolioTemplateComponent,
+    SinglePortfolioComponent,
+    PortfolioNavigationComponent
   ],
   imports: [
     BrowserModule,

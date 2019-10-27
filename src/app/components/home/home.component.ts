@@ -1,8 +1,4 @@
-import {
-  Component,
-  ViewChild,
-  ViewContainerRef
-} from '@angular/core';
+import { Component, ViewChild, ViewContainerRef } from '@angular/core';
 import {Store} from '@ngrx/store';
 import {State} from '../../store/reducers';
 import {CloseCard, OpenCard} from '../../store/actions/card-status.actions';

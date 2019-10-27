@@ -14,7 +14,7 @@ export class SinglePortfolioComponent implements OnInit {
   constructor(private portfolioService: PortfolioService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.portfolioService.getPortfolio(this.route.snapshot.params.id).subscribe(portfolio => {
+    this.portfolioService.getPortfolio(parseInt(this.route.snapshot.params.id, 10)).subscribe(portfolio => {
       this.portfolio = portfolio;
     });
   }

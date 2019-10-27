@@ -241,16 +241,14 @@ export class PortfolioService {
   constructor() { }
 
   getAllPortfolios(): Observable<PortfolioModel[]> {
-    return(of<PortfolioModel[]>(this.portfolios.reverse()));
+    return(of<PortfolioModel[]>(_.sortBy(this.portfolios, 'id').reverse()));
   }
 
-  getTotalPortfolios(): number {
-    return(this.portfolios.length);
+  getTotalPortfolios(): Observable<number> {
+    return(of<number>(this.portfolios.length));
   }
 
   getPortfolio(id: number): Observable<PortfolioModel> {
-    const tmp = _.find(this.portfolios, (x) => x.id === id);
-    console.log(id);
-    return(of<PortfolioModel>(tmp));
+    return(of<PortfolioModel>(_.find(this.portfolios, (x) => x.id === id)));
   }
 }

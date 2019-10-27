@@ -1,5 +1,5 @@
 <div class="portfolio-nav">
-  <span class="prev ajax"><a href="portfolio-item-03.html"></a></span>
+  <span class="prev ajax" *ngIf="next"><a [routerLink]="['/single-portfolio',next]"></a></span>
   <span class="back"><a routerLink="/home/portfolio"></a></span>
-  <span class="next ajax"><a href="portfolio-item-02.html"></a></span>
+  <span class="next ajax" *ngIf="prev"><a [routerLink]="['/single-portfolio',prev]"></a></span>
 </div>

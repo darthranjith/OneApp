@@ -10,9 +10,12 @@ export class PortfolioService {
 
   portfolios: PortfolioModel[] = [
     {
-      id: 1,
+      id: 15,
       image: '../../assets/images/portfolio/28-shark.png',
       title: 'Chitfund software',
+      slug: 'chitfund-software',
+      prevId: 14,
+      nextId: null,
       category: 'Angular/ASP.NET',
       client: 'ARRS SILKS & PACHAIAMMAN SILKS',
       date: 'JULY 2015 – FEBRUARY 2016',
@@ -30,9 +33,12 @@ export class PortfolioService {
       technology: 'ASP.NET MVC5, , C#, HTML, JavaScript,CSS, DevExpress Kit, Entity Framework, MSSQL'
     },
     {
-      id: 2,
+      id: 14,
       image: '../../assets/images/portfolio/27-crocodile.png',
       title: 'AARIS Customer infodesk',
+      slug: 'aaris-customer-infodesk',
+      prevId: 13,
+      nextId: 15,
       category: 'Angular/ASP.NET',
       client: 'AARIS, USA',
       date: 'APRIL 2016 – JUNE 2016',
@@ -47,9 +53,12 @@ export class PortfolioService {
       technology: 'ASP.NET MVC5, MSSQL, HTML, jQuery / JavaScript, CSS'
     },
     {
-      id: 3,
+      id: 13,
       image: '../../assets/images/portfolio/26-squid.png',
       title: 'SSKOT',
+      slug: 'sskot-software',
+      prevId: 12,
+      nextId: 14,
       category: 'Angular/ASP.NET',
       client: 'MULTIPLE CLIENTS, INDIA',
       date: 'FEBRUARY 2016 – APRIL 2016',
@@ -62,9 +71,12 @@ export class PortfolioService {
       technology: 'HTML, JavaScript, CSS, KendoUI, Cordova, WebAPI2'
     },
     {
-      id: 4,
+      id: 12,
       image: '../../assets/images/portfolio/23-fox.png',
       title: 'Pothys reporter',
+      slug: 'pothys-reporter',
+      prevId: 11,
+      nextId: 13,
       category: 'Angular/ASP.NET',
       client: 'POTHYS TEXTILE, INDIA',
       date: 'JULY 2016 – SEPTEMBER 2016',
@@ -78,9 +90,12 @@ export class PortfolioService {
       technology: 'Laravel 5.2, PHP, HTML, CSS, jQuery / JavaScript, MSSQL'
     },
     {
-      id: 5,
+      id: 11,
       image: '../../assets/images/portfolio/22-pig.png',
       title: 'Green sm reporting',
+      slug: 'green-sm-reporting',
+      prevId: 10,
+      nextId: 12,
       category: 'Angular/ASP.NET',
       client: 'GREENS SM TEXTILES, INDIA',
       date: 'JUNE 2016 – JULY 2016',
@@ -94,9 +109,12 @@ export class PortfolioService {
       technology: 'Cordova, KendoUI, HTML, jQuery / JavaScript, CSS, MSSQL'
     },
     {
-      id: 6,
+      id: 10,
       image: '../../assets/images/portfolio/20-lion.png',
       title: 'Hospital info system',
+      slug: 'hospital-info-system',
+      prevId: 9,
+      nextId: 11,
       category: 'Angular/ASP.NET',
       client: 'MULTIPLE CLIENTS, INDIA',
       date: 'NOVEMBER 2016 – JANUARY 2017',
@@ -109,9 +127,12 @@ export class PortfolioService {
         'Dapper database connectivity, Autofac dependency injection, Fluent validation'
     },
     {
-      id: 7,
+      id: 9,
       image: '../../assets/images/portfolio/17-otter.png',
       title: 'KVT Reporter',
+      slug: 'kvt-reporter',
+      prevId: 8,
+      nextId: 10,
       category: 'Angular/ASP.NET',
       client: 'KV TEXTILES, INDIA',
       date: 'SEPTEMBER 2016 – NOVEMBER 2016',
@@ -126,6 +147,9 @@ export class PortfolioService {
       id: 8,
       image: '../../assets/images/portfolio/14-seal.png',
       title: 'Cogwave house keeping',
+      slug: 'cogwave-house-keeping',
+      prevId: 7,
+      nextId: 9,
       category: 'Angular/ASP.NET',
       client: 'MULTIPLE CLIENTS, INDIA',
       date: 'FEBRUARY 2017 – APRIL 2017',
@@ -139,9 +163,12 @@ export class PortfolioService {
       technology: 'WebAPI2, C#, SQL Server, MaterializeCSS, jQuery, JavaScript,ASP.NET MVC'
     },
     {
-      id: 9,
+      id: 7,
       image: '../../assets/images/portfolio/13-elephant.png',
       title: 'HMS Online Reports',
+      slug: 'hms-online-reports',
+      prevId: 6,
+      nextId: 8,
       category: 'Angular/ASP.NET',
       client: 'MULTIPLE CLIENTS, INDIA',
       date: 'JANUARY 2017 – FEBRUARY 2017',
@@ -154,9 +181,12 @@ export class PortfolioService {
       technology: 'ASP.NET MVC, C#, SQL Server, Angular JavaScript, Bootstrap,WebPI2'
     },
     {
-      id: 10,
+      id: 6,
       image: '../../assets/images/portfolio/11-rabbit.png',
       title: 'EKOT',
+      slug: 'ekot-software',
+      prevId: 5,
+      nextId: 7,
       category: 'Angular/ASP.NET/WebAPI',
       client: 'MULTIPLE CLIENTS, INDIA',
       date: 'APRIL 2017 – JULY 2017',
@@ -170,9 +200,12 @@ export class PortfolioService {
       technology: 'WebAPI2, Angular 4, Ionic, MaterializeCSS, TypeScript, SQL Server'
     },
     {
-      id: 11,
+      id: 5,
       image: '../../assets/images/portfolio/10-taco-toucan.png',
       title: 'Cogwave feedback app',
+      slug: 'cogwave-feedback-app',
+      prevId: 4,
+      nextId: 6,
       category: 'Angular/ASP.NET/WebAPI',
       client: 'MULTIPLE CLIENTS, INDIA',
       date: 'APRIL 2017 – APRIL 2017',
@@ -183,9 +216,12 @@ export class PortfolioService {
       technology: 'WebAPI2, C#, SQL Server, Angular 4, Ionic, TypeScript'
     },
     {
-      id: 12,
+      id: 4,
       image: '../../assets/images/portfolio/09-bird.png',
       title: 'Kitchen display system',
+      slug: 'kitchen-display-system',
+      prevId: 3,
+      nextId: 5,
       category: 'Angular/ASP.NET/WebAPI',
       client: 'MULTIPLE CLIENTS, INDIA',
       date: 'JULY 2017 – OCT 2017',
@@ -197,9 +233,12 @@ export class PortfolioService {
       technology: 'WebAPI2, Angular 4, Ionic, MaterializeCSS, TypeScript,SQL Server'
     },
     {
-      id: 13,
+      id: 3,
       image: '../../assets/images/portfolio/07-chick.png',
       title: 'PF Chang\'s site',
+      slug: 'pfchangs-software',
+      prevId: 2,
+      nextId: 4,
       category: 'Angular/Sitefinity/Azure',
       client: 'P.F.CHANG\'S, USA',
       date: 'OCT 2017 – DEC 2017',
@@ -209,9 +248,12 @@ export class PortfolioService {
       technology: 'Asp.Net MVC, C# .Net, AngulatJS1.5, Telerik Sitefinity, Bootstrap, JavaScript, Ajax, jQuery'
     },
     {
-      id: 14,
+      id: 2,
       image: '../../assets/images/portfolio/04-cat.png',
       title: 'Unified book specification',
+      slug: 'unified-book-specification',
+      prevId: 1,
+      nextId: 3,
       category: 'ASP.NET MVC/MSBI/SSIS',
       client: 'LSC COMMUNICATIONS & PEARSON INC, U.S.A',
       date: 'DECEMBER 2017 - SEPTEMBER 2018',
@@ -224,9 +266,12 @@ export class PortfolioService {
       technology: 'C#. NET, ASP.NET MVC, EF, JavaScript, jQuery, Bootstrap 4, SSIS, SQL Server 2016, Windows 10, AJAX, WEBAPI2, SOLID, TDD'
     },
     {
-      id: 15,
+      id: 1,
       image: '../../assets/images/portfolio/01-dog.png',
       title: 'Scheduling and staffing',
+      slug: 'scheduling-staffing',
+      prevId: null,
+      nextId: 2,
       category: 'Angular/ASP.NET/Azure',
       client: 'GE HEALTHCARE & SYMPLR',
       date: 'SEPTEMBER 2018 - TILL NOW',
@@ -241,7 +286,7 @@ export class PortfolioService {
   constructor() { }
 
   getAllPortfolios(): Observable<PortfolioModel[]> {
-    return(of<PortfolioModel[]>(_.sortBy(this.portfolios, 'id').reverse()));
+    return(of<PortfolioModel[]>(_.sortBy(this.portfolios, 'id')));
   }
 
   getTotalPortfolios(): Observable<number> {

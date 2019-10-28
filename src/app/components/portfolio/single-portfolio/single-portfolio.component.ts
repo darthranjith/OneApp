@@ -10,13 +10,13 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class SinglePortfolioComponent implements OnInit {
   portfolio: PortfolioModel;
-
   constructor(private portfolioService: PortfolioService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.portfolioService.getPortfolio(parseInt(this.route.snapshot.params.id, 10)).subscribe(portfolio => {
-      this.portfolio = portfolio;
+    this.route.params.subscribe(params => {
+      this.portfolioService.getPortfolio(+params.id).subscribe(portfolio => {
+        this.portfolio = portfolio;
+      });
     });
   }
-
 }

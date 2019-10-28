@@ -1,9 +1,5 @@
 import { Action } from '@ngrx/store';
 import {CardStatusActionTypes} from '../actions/card-status.actions';
-
-
-export const cardStatusFeatureKey = 'cardStatus';
-
 export interface ICardState {
 isCardOpen: boolean;
 }

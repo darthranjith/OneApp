@@ -1,5 +1,8 @@
 export interface PortfolioModel {
   id: number;
+  slug: string;
+  nextId: number;
+  prevId: number;
   image: string;
   title: string;
   category: string;

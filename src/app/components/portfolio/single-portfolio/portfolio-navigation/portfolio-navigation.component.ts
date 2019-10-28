@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {PortfolioService} from '../../../../services/portfolio.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-portfolio-navigation',
@@ -7,23 +8,10 @@ import {PortfolioService} from '../../../../services/portfolio.service';
   styleUrls: ['./portfolio-navigation.component.scss']
 })
 export class PortfolioNavigationComponent implements OnInit {
-@Input() currentPortfolio: number;
-next: number;
-prev: number;
-  constructor(private portfolioService: PortfolioService) { }
+@Input() previous: number;
+@Input() next: number;
+  constructor() { }
 
   ngOnInit() {
-    this.portfolioService.getTotalPortfolios().subscribe(total => {
-      if (this.currentPortfolio === total) {
-        this.next = null;
-        this.prev = this.currentPortfolio - 1;
-      } else if (this.currentPortfolio > 0 && this.currentPortfolio < total) {
-        this.next = this.currentPortfolio + 1;
-        this.prev = this.currentPortfolio - 1;
-      } else {
-        this.next = this.currentPortfolio + 1;
-        this.prev = null;
-      }
-    });
   }
 }

@@ -2,7 +2,7 @@
   <div class="portfolio-single page-layout">
     <article class="hentry">
       <header class="entry-header">
-        <app-portfolio-navigation [currentPortfolio]="portfolio.id"></app-portfolio-navigation>
+        <app-portfolio-navigation [previous]="portfolio.prevId" [next]="portfolio.nextId"></app-portfolio-navigation>
         <h1 class="entry-title">{{portfolio.title}}</h1>
       </header>
       <div class="entry-content">
@@ -20,7 +20,7 @@
               <strong>Role:</strong> {{portfolio.role}}
             </div>
         </div>
-        <app-portfolio-navigation [currentPortfolio]="portfolio.id"></app-portfolio-navigation>
+        <app-portfolio-navigation [previous]="portfolio.prevId" [next]="portfolio.nextId"></app-portfolio-navigation>
       </div>
     </article>
   </div>

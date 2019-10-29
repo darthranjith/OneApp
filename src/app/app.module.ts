@@ -21,6 +21,7 @@ import { SinglePortfolioComponent } from './components/portfolio/single-portfoli
 import { PortfolioNavigationComponent } from './components/portfolio/single-portfolio/portfolio-navigation/portfolio-navigation.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { PocComponent } from './components/poc/poc.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     PortfolioTemplateComponent,
     SinglePortfolioComponent,
     PortfolioNavigationComponent,
-    ContactComponent
+    ContactComponent,
+    PocComponent
   ],
   imports: [
     BrowserModule,

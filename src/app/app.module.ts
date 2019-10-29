@@ -19,6 +19,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { PortfolioTemplateComponent } from './components/portfolio/portfolio-template/portfolio-template.component';
 import { SinglePortfolioComponent } from './components/portfolio/single-portfolio/single-portfolio.component';
 import { PortfolioNavigationComponent } from './components/portfolio/single-portfolio/portfolio-navigation/portfolio-navigation.component';
+import { ContactComponent } from './components/contact/contact.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { PortfolioNavigationComponent } from './components/portfolio/single-port
     PortfolioComponent,
     PortfolioTemplateComponent,
     SinglePortfolioComponent,
-    PortfolioNavigationComponent
+    PortfolioNavigationComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ import { PortfolioNavigationComponent } from './components/portfolio/single-port
         strictActionImmutability: true,
       }
     }),
-    !environment.production ? StoreDevtoolsModule.instrument() : []
+    !environment.production ? StoreDevtoolsModule.instrument() : [],
+    FlexLayoutModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

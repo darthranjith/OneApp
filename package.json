@@ -1,6 +1,6 @@
 {
   "name": "oneapp",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --o",
@@ -12,9 +12,11 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.12",
+    "@angular/cdk": "^8.2.3",
     "@angular/common": "~8.2.12",
     "@angular/compiler": "~8.2.12",
     "@angular/core": "~8.2.12",
+    "@angular/flex-layout": "^8.0.0-beta.27",
     "@angular/forms": "~8.2.12",
     "@angular/platform-browser": "~8.2.12",
     "@angular/platform-browser-dynamic": "~8.2.12",

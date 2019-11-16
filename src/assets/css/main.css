@@ -2613,13 +2613,14 @@ a.more-link:hover {
  	content: "\e874";
 	}
 .portfolio-nav .back {
- 	display: none;
+ 	display: block;
 	}
 .portfolio-nav .back a:before {
  	content: "\e875";
 	}
 .portfolio-nav .back a:hover {
- 	background: #345
+ 	background: #345;
+  color: white;
 	}
 .one-page-layout .portfolio-nav .back {
  	display: inline-block;

@@ -1,27 +1,30 @@
-<div id="content" class="site-content" role="main">
-  <div class="portfolio-single page-layout">
-    <article class="hentry">
-      <header class="entry-header">
-        <app-portfolio-navigation [previous]="portfolio.prevId" [next]="portfolio.nextId"></app-portfolio-navigation>
-        <h1 class="entry-title">{{portfolio.title}}</h1>
-      </header>
-      <div class="entry-content">
-        <div class="portfolio-desc">
-          <p>{{portfolio.description}}</p>
-          <div class="portfolio-meta">
-            <strong>Client:</strong> {{portfolio.client}}
-            <strong>Date:</strong> {{portfolio.date}}
-            <strong>Environment:</strong> {{portfolio.environment}}
+<div class="modal-body">
+  <div id="content" class="site-content" role="main">
+    <div class="portfolio-single page-layout">
+      <article class="hentry">
+        <header class="entry-header">
+          <div class="portfolio-nav">
+            <span class="back "><a class="pointer" (click)="closeModal()"></a></span>
           </div>
+          <h1 class="entry-title">{{portfolio.title}}</h1>
+        </header>
+        <div class="entry-content">
+          <div class="portfolio-desc">
+            <p>{{portfolio.description}}</p>
+            <div class="portfolio-meta">
+              <strong>Client:</strong> {{portfolio.client}}
+              <strong>Date:</strong> {{portfolio.date}}
+              <strong>Environment:</strong> {{portfolio.environment}}
+            </div>
             <div class="portfolio-meta">
               <strong>Technology:</strong> {{portfolio.technology}}
             </div>
             <div class="portfolio-meta">
               <strong>Role:</strong> {{portfolio.role}}
             </div>
+          </div>
         </div>
-        <app-portfolio-navigation [previous]="portfolio.prevId" [next]="portfolio.nextId"></app-portfolio-navigation>
-      </div>
-    </article>
+      </article>
+    </div>
   </div>
 </div>

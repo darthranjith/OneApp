@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {PortfolioModel} from '../../../models/portfolio.model';
 import {PortfolioService} from '../../../services/portfolio.service';
-import {ActivatedRoute} from '@angular/router';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-single-portfolio',
@@ -10,13 +10,16 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class SinglePortfolioComponent implements OnInit {
   portfolio: PortfolioModel;
-  constructor(private portfolioService: PortfolioService, private route: ActivatedRoute) {}
+  @Input() id: number;
+  constructor(private portfolioService: PortfolioService, public activeModal: NgbActiveModal) {}
 
   ngOnInit() {
-    this.route.params.subscribe(params => {
-      this.portfolioService.getPortfolio(+params.id).subscribe(portfolio => {
+      this.portfolioService.getPortfolio(this.id).subscribe(portfolio => {
         this.portfolio = portfolio;
       });
-    });
+  }
+
+  closeModal() {
+    this.activeModal.close('Modal Closed');
   }
 }

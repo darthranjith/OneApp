@@ -41,30 +41,7 @@
             <i class="pw-icon-education"></i>
           </p>
         </div>
-        <div class="event">
-          <h3>2009 - 2012</h3>
-          <h4>MASTER OF COMPUTER APPLICATIONS</h4>
-          <h5>HINDUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGIES</h5>
-          <p>9.02 CGPA (Distinction)</p>
-        </div>
-        <div class="event">
-          <h3>2006 - 2009</h3>
-          <h4>BACHELOR OF COMPUTER APPLICATIONS</h4>
-          <h5>SMS COLLEGE OF ARTS AND SCIENCE</h5>
-          <p>77% (First Class)</p>
-        </div>
-        <div class="event">
-          <h3>2005 - 2006</h3>
-          <h4>HSC</h4>
-          <h5>SN MATRICULATION HIGHER SECONDARY SCHOOL</h5>
-          <p>79.25% (First Class)</p>
-        </div>
-        <div class="event">
-          <h3>2003 - 2004</h3>
-          <h4>SSLC</h4>
-          <h5>SN MATRICULATION HIGHER SECONDARY SCHOOL</h5>
-          <p>74.25% (First Class)</p>
-        </div>
+        <app-event *ngFor="let eduEvent of eduEvents" [event]="eduEvent"></app-event>
         <p><button type="button" fileSaver [method]="'GET'" [fileName]="'Ranjith-Resume.pdf'" [url]="'assets/files/general/resume.pdf'" class="button primary">Download Cv</button></p>
       </div>
       <div class="col-sm-6">

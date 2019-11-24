@@ -9,7 +9,7 @@ import {ProgressBarModel} from '../../../models/progress-bar.model';
 export class ProgressBarComponent implements AfterViewInit {
 
   @Input() skillset: ProgressBarModel;
-  loaded: boolean = false;
+  loaded = false;
 
   constructor() { }
 

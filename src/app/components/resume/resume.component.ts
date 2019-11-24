@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ProgressBarModel} from '../../models/progress-bar.model';
 import {TestimonialModel} from '../../models/testimonial.model';
+import {EventModel} from '../../models/event.model';
 
 @Component({
   selector: 'app-resume',
@@ -10,6 +11,7 @@ import {TestimonialModel} from '../../models/testimonial.model';
 export class ResumeComponent implements OnInit {
   skills: ProgressBarModel[];
   testimonials: TestimonialModel[];
+  eduEvents: EventModel[];
 
   constructor() { }
 
@@ -49,6 +51,15 @@ export class ResumeComponent implements OnInit {
       }
     ];
     this.testimonials = [
+      {
+        name: 'SUGUNA BHUSHAN',
+        position: 'STAFF SOFTWARE ENGINEER / SYMPLR',
+        image: '../../../assets/images/site/suguna.jpg',
+        comments: 'He is a full stack developer with .NET and UI Skill set. He is always given challenging UI styling work, ' +
+          'he has always overcome the challenges and delivered the work on time with quality.\n' +
+          'As his team lead, I am always confident to take up challenging tasks for the team and will be delivered with quality.\n' +
+          'Wish him all the luck ahead.'
+      },
       {
         name: 'VIJAYA KUMAR PALANISAMY',
         position: 'SUPERVISING ASSOCIATE / EY.',
@@ -106,6 +117,40 @@ export class ResumeComponent implements OnInit {
           'He is sincere, dedicated in his work. I wish him all good luck '
       }
     ];
+    this.eduEvents = [
+      {
+        startYear: '2009',
+        endYear: '2012',
+        Title: 'MASTER OF COMPUTER APPLICATIONS',
+        Name: 'HINDUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGIES',
+        percentage: '9.02 CGPA',
+        class: 'Distinction'
+      },
+      {
+        startYear: '2006',
+        endYear: '2006',
+        Title: 'BACHELOR OF COMPUTER APPLICATIONS',
+        Name: 'SMS COLLEGE OF ARTS AND SCIENCE',
+        percentage: '77%',
+        class: 'First Class'
+      },
+      {
+        startYear: '2005',
+        endYear: '2006',
+        Title: 'HIGHER SECONDARY CERTIFICATE',
+        Name: 'SN MATRICULATION HIGHER SECONDARY SCHOOL',
+        percentage: '79.25%',
+        class: 'First Class'
+      },
+      {
+        startYear: '2003',
+        endYear: '2004',
+        Title: 'SECONDARY SCHOOL LEAVING CERTIFICATE',
+        Name: 'SN MATRICULATION HIGHER SECONDARY SCHOOL',
+        percentage: '74.25%',
+        class: 'First Class'
+      }
+    ];
   }
-
 }
+

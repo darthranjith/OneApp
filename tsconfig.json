@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "spicinemas-lib": [
+        "dist/spicinemas-lib"
+      ],
+      "spicinemas-lib/*": [
+        "dist/spicinemas-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

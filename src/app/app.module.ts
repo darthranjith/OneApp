@@ -21,7 +21,6 @@ import { SinglePortfolioComponent } from './components/portfolio/single-portfoli
 import { ContactComponent } from './components/contact/contact.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { PocComponent } from './components/poc/poc.component';
-import {SpiCinemasSharedModule} from '../../projects/spicinemas-scrapper/src/app/app.module';
 import {EventComponent} from './components/helper/event/event.component';
 
 @NgModule({
@@ -46,7 +45,6 @@ import {EventComponent} from './components/helper/event/event.component';
     AppRoutingModule,
     HttpClientModule,
     FileSaverModule,
-    SpiCinemasSharedModule.forRoot(),
     StoreModule.forRoot(reducers, {
       metaReducers,
       runtimeChecks: {

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <form [formGroup]="movieForm" (ngSubmit)="getStatus()">
+        <div class="form-group">
+          <select class="form-control" id="movie" name="movie" formControlName="movie">
+            <option selected disabled>Select a movie</option>
+            <option *ngFor="let movie of movies" [value]="movie">{{movie}}</option>
+          </select>
+        </div>
+        <button *ngIf="!isActive" type="submit" class="btn btn-danger btn-block" [disabled]="!movieForm.valid">Start
+        </button>
+        <button *ngIf="isActive" type="button" class="btn btn-warning btn-block" (click)="stop()">Stop</button>
+      </form>
+    </div>
+    <div class="col-8">
+      <lib-terminal [log]="movieStatus"></lib-terminal>
+    </div>
+  </div>
+</div>

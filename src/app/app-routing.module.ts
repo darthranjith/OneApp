@@ -18,7 +18,7 @@ const routes: Routes = [
     ]},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'spicinemas',
-    loadChildren: '../../projects/spicinemas-scrapper/src/app/app.module#SpiCinemasSharedModule'
+    loadChildren: () => import('../../projects/spicinemas-lib/src/lib/spicinemas-lib.module').then(m => m.SpicinemasLibModule)
   }
 ];
 

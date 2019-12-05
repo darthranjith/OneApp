@@ -1,6 +1,7 @@
-<div class="container">
+<div class="full-screen">
+<div class="container top-padding">
   <div class="row">
-    <div class="col-4">
+    <div class="bottom-padding-xs col-md-4 col-xs-6">
       <form [formGroup]="movieForm" (ngSubmit)="getStatus()">
         <div class="form-group">
           <select class="form-control" id="movie" name="movie" formControlName="movie">
@@ -12,9 +13,17 @@
         </button>
         <button *ngIf="isActive" type="button" class="btn btn-warning btn-block" (click)="stop()">Stop</button>
       </form>
+      <div *ngIf="isActive" class="timer">
+        <span>{{timer}}s  left until next check</span>
+        <div class="progress">
+          <div #progress class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+
     </div>
-    <div class="col-8">
+    <div class="col-md-8 col-xs-6">
       <lib-terminal [log]="movieStatus"></lib-terminal>
     </div>
   </div>
+</div>
 </div>

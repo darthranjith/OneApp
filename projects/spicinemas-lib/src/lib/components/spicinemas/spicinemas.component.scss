@@ -1,3 +1,26 @@
-.container{
-  padding: 10vh;
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.full-screen {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #57003f 0%,#f57453 100%);
+  font-family: 'Ubuntu', serif;
+}
+
+.top-padding{
+  padding-top: 5vh;
+}
+
+.bottom-padding-xs{
+  padding-bottom: 5vh;
+}
+
+.timer{
+  > span{
+    color: white;
+  }
+
+  padding: 10px 0 0 0;
 }

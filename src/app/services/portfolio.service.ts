@@ -289,10 +289,6 @@ export class PortfolioService {
     return(of<PortfolioModel[]>(_.sortBy(this.portfolios, 'id')));
   }
 
-  getTotalPortfolios(): Observable<number> {
-    return(of<number>(this.portfolios.length));
-  }
-
   getPortfolio(id: number): Observable<PortfolioModel> {
     return(of<PortfolioModel>(_.find(this.portfolios, (x) => x.id === id)));
   }

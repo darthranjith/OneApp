@@ -9,7 +9,6 @@ import {BlogFeaturedImageRawModel} from '../models/raw/blog.featuredimage.raw.mo
   providedIn: 'root'
 })
 export class BlogService {
-  post;
   constructor(private http: HttpClient) { }
 
   getPosts(): Observable<BlogPostRawModel[]> {
@@ -20,11 +19,6 @@ export class BlogService {
   getCategories(): Observable<BlogCategoryRawModel[]> {
     const url = 'https://blog.varanjith.com/wp-json/wp/v2/categories';
     return this.http.get<BlogCategoryRawModel[]>(url);
-      // .pipe(
-      //   map((categories: BlogCategoryModel[]) =>
-      //     categories.map(({ id, name, slug, parent }) => ({ id, name, slug, parent }))
-      //   )
-      // );
   }
 
   getFeaturedImages(): Observable<BlogFeaturedImageRawModel[]> {

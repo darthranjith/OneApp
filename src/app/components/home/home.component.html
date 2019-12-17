@@ -6,6 +6,8 @@
       Recently won a hackathon competition!!
     </p>
     <div class="card-triggers">
+      <ng-template #skillIQContent><img src="../../../assets/images/home/skill-iq.jpg" height="600"></ng-template>
+      <img class="iq-skill" triggers="mouseenter:mouseleave" [ngbPopover]="skillIQContent" src="../../../assets/images/home/skill-iq-logo-black.png"/>
       <button type="button" fileSaver [method]="'GET'" [fileName]="'Ranjith-Resume.pdf'" [url]="'assets/files/general/resume.pdf'" class="button primary">Download Cv</button>
       <button (click)="openCard()" class="button secondary">Discover</button>
     </div>
@@ -37,9 +39,6 @@
           </li>
           <li>
             <a routerLink='poc' routerLinkActive='current_page_item' (click)="openSection()"><i class="pw-icon-newspaper"></i>POC's</a>
-          </li>
-          <li>
-            <a routerLink='blog' routerLinkActive='current_page_item' (click)="openSection()"><i class="pw-icon-book-open-1"></i>Blog</a>
           </li>
           <li>
             <a  routerLink='contact' routerLinkActive='current_page_item' (click)="openSection()"><i class="pw-icon-at"></i>Contact</a>

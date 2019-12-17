@@ -6,7 +6,6 @@ import {ResumeComponent} from './components/resume/resume.component';
 import {PortfolioComponent} from './components/portfolio/portfolio.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {PocComponent} from './components/poc/poc.component';
-import {BlogComponent} from './components/blog/blog.component';
 
 
 const routes: Routes = [
@@ -15,8 +14,7 @@ const routes: Routes = [
       { path: 'resume', component: ResumeComponent },
       { path: 'portfolio', component: PortfolioComponent},
       { path: 'contact', component: ContactComponent},
-      { path: 'poc', component: PocComponent},
-      { path: 'blog', component: BlogComponent}
+      { path: 'poc', component: PocComponent}
     ]},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'spicinemas',

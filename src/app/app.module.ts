@@ -22,7 +22,6 @@ import { ContactComponent } from './components/contact/contact.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { PocComponent } from './components/poc/poc.component';
 import {EventComponent} from './components/helper/event/event.component';
-import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -37,9 +36,7 @@ import { BlogComponent } from './components/blog/blog.component';
     SinglePortfolioComponent,
     ContactComponent,
     PocComponent,
-    EventComponent,
-    EventComponent,
-    BlogComponent
+    EventComponent
   ],
   imports: [
     NgbModule,
